@@ -197,7 +197,7 @@ export default function Workspace() {
         <div className="brand">
           Zero<span>Commit</span> · Live Workspace
         </div>
-        <span className={`pill ${online ? 'on' : 'off'}`}>{online ? 'backend connected' : 'backend offline'}</span>
+        <span className={`pill ${online ? 'on' : 'off'}`}>{online ? 'backend connected · 接続' : 'backend offline · 切断'}</span>
       </header>
       {!online && <div className="banner">Cannot reach backend API. Check: docker compose ps and docker compose logs server</div>}
       <div className="cols">
