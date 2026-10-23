@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { FilePatch, Graph, LogEvent, NodeKind, Patch, ProbeResult, QueryTiming, Scenario, SystemState } from '../lib/types';
 
-const API = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:4000';
+const API = '';
 const COL: Record<NodeKind, number> = { client: 0, gateway: 1, auth: 2, route: 3, service: 3, orm: 4, db: 5, cache: 5 };
 const NW = 128;
 const NH = 40;
@@ -199,7 +199,7 @@ export default function Workspace() {
         </div>
         <span className={`pill ${online ? 'on' : 'off'}`}>{online ? 'backend connected' : 'backend offline'}</span>
       </header>
-      {!online && <div className="banner">Cannot reach {API}. Start the server: cd server && npm run dev</div>}
+      {!online && <div className="banner">Cannot reach backend API. Check: docker compose ps and docker compose logs server</div>}
       <div className="cols">
         <section className="col">
           <div className="card">
