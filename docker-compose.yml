@@ -1,0 +1,18 @@
+services:
+  server:
+    build: ./server
+    container_name: zc-server
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=4000
+    restart: unless-stopped
+
+  web:
+    build: ./web
+    container_name: zc-web
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+    restart: unless-stopped
