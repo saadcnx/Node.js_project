@@ -10,9 +10,9 @@
   --green: #34ffb0;
   --amber: #ffd23f;
   --red: #ff4d6d;
-  --mono: var(--f-mono), ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --head: var(--f-head), var(--f-jp), system-ui, sans-serif;
-  --jpf: var(--f-jp), 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --head: 'Zen Dots', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', system-ui, sans-serif;
+  --jpf: 'DotGothic16', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
 }
 * {
   box-sizing: border-box;
